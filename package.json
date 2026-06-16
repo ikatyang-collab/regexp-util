@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@vitest/coverage-v8": "4.1.9",
-    "prettier": "3.5.3",
+    "prettier": "3.8.4",
     "standard-version": "9.5.0",
     "typescript": "6.0.3",
     "vite": "6.4.3",
