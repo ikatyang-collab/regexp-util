@@ -23,12 +23,12 @@
     "release": "standard-version"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "3.0.8",
+    "@vitest/coverage-v8": "4.1.9",
     "prettier": "3.5.3",
     "standard-version": "9.5.0",
-    "typescript": "5.8.2",
+    "typescript": "6.0.3",
     "vite": "6.2.4",
-    "vitest": "3.2.6"
+    "vitest": "4.1.9"
   },
   "engines": {
     "node": ">=16"
