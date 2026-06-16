@@ -21,11 +21,11 @@ importers:
         specifier: 6.0.3
         version: 6.0.3
       vite:
-        specifier: 6.2.4
-        version: 6.2.4
+        specifier: 6.4.3
+        version: 6.4.3
       vitest:
         specifier: 4.1.9
-        version: 4.1.9(@vitest/coverage-v8@4.1.9)(vite@6.2.4)
+        version: 4.1.9(@vitest/coverage-v8@4.1.9)(vite@6.4.3)
 
 packages:
 
@@ -1176,8 +1176,8 @@ packages:
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
-  vite@6.2.4:
-    resolution: {integrity: sha512-veHMSew8CcRzhL5o8ONjy8gkfmFJAd5Ac16oxBUjlwgX3Gq2Wqr+qNC3TjPIpy7TPV/KporLga5GT9HqdrCizw==}
+  vite@6.4.3:
+    resolution: {integrity: sha512-NTKlcQjlAK7MlQoyb6LgaqHc8sso/pVyUJYWMws3jg21uTJw/LddqIFPcPqP6PzpgbIcZyKI85sFE4HBrQDA8A==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -1492,7 +1492,7 @@ snapshots:
       obug: 2.1.3
       std-env: 4.1.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.9(@vitest/coverage-v8@4.1.9)(vite@6.2.4)
+      vitest: 4.1.9(@vitest/coverage-v8@4.1.9)(vite@6.4.3)
 
   '@vitest/expect@4.1.9':
     dependencies:
@@ -1503,13 +1503,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.9(vite@6.2.4)':
+  '@vitest/mocker@4.1.9(vite@6.4.3)':
     dependencies:
       '@vitest/spy': 4.1.9
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 6.2.4
+      vite: 6.4.3
 
   '@vitest/pretty-format@4.1.9':
     dependencies:
@@ -2350,18 +2350,21 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite@6.2.4:
+  vite@6.4.3:
     dependencies:
       esbuild: 0.25.2
+      fdir: 6.5.0(picomatch@4.0.4)
+      picomatch: 4.0.4
       postcss: 8.5.3
       rollup: 4.38.0
+      tinyglobby: 0.2.17
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitest@4.1.9(@vitest/coverage-v8@4.1.9)(vite@6.2.4):
+  vitest@4.1.9(@vitest/coverage-v8@4.1.9)(vite@6.4.3):
     dependencies:
       '@vitest/expect': 4.1.9
-      '@vitest/mocker': 4.1.9(vite@6.2.4)
+      '@vitest/mocker': 4.1.9(vite@6.4.3)
       '@vitest/pretty-format': 4.1.9
       '@vitest/runner': 4.1.9
       '@vitest/snapshot': 4.1.9
@@ -2378,7 +2381,7 @@ snapshots:
       tinyexec: 1.2.4
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.0
-      vite: 6.2.4
+      vite: 6.4.3
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@vitest/coverage-v8': 4.1.9(vitest@4.1.9)
