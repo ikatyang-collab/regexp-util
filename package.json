@@ -16,7 +16,6 @@
   },
   "license": "MIT",
   "scripts": {
-    "prepack": "pnpm run build",
     "lint": "prettier --check .",
     "test": "vitest",
     "build": "tsc -p ./tsconfig.build.json",
@@ -37,5 +36,5 @@
     "/lib/**/*",
     "/CHANGELOG.md"
   ],
-  "packageManager": "pnpm@11.7.0"
+  "packageManager": "yarn@4.18.0"
 }
