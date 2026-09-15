@@ -1,0 +1,17 @@
+name: autofix.ci
+
+on:
+  pull_request:
+
+permissions: {}
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: ./.github/actions/setup
+      - run: yarn fix || true
+      - uses: autofix-ci/action@v1
+        with:
+          commit-message: "Apply automated fix"
