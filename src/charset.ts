@@ -3,10 +3,7 @@ import { Base } from './base.js'
 export type CharsetInput = Charset | CharsetRawInput
 
 export type CharsetRawInput =
-  | string
-  | number
-  | [string, string]
-  | [number, number]
+  string | number | [string, string] | [number, number]
 
 export type CharsetDataUnit = [number, number]
 
@@ -53,8 +50,7 @@ export class Charset extends Base {
         isDone = true
 
         const subtractDataUnit = subtractData[subtractIndex] as
-          | undefined
-          | CharsetDataUnit
+          undefined | CharsetDataUnit
 
         if (subtractDataUnit === undefined) {
           newData.push(dataUnit)
