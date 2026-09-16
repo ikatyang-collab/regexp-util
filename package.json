@@ -21,7 +21,7 @@
     "check": "tsc --noEmit",
     "test": "vitest",
     "build": "tsc -p ./tsconfig.build.json",
-    "release": "standard-version"
+    "release": "release-it"
   },
   "devDependencies": {
     "@vitest/coverage-v8": "5.0.1",
